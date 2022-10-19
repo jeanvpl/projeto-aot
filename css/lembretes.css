@@ -1,0 +1,57 @@
+.bloquinhos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.lembretes {
+    display: flex;
+    background-color: #7C46E0;
+    width: 700px;
+    height: 300px;
+    margin-top: -30px;
+    border-radius: 50px;
+}
+
+.dicas {
+    display: flex;
+    align-items: center;
+}
+
+.bdicas {
+    width: 300px;
+    height: 200px;
+    background-color: #7C46E0;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.dicasFooter {
+    margin-top: -10px;
+}
+
+@media screen and (max-width:1795px) {
+    .bloquinhos {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .bdicas {
+        margin-top: 10px;
+    }
+
+    .background {
+        height: 150vmin;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .dicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

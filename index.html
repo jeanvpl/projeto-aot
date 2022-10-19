@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto AOT</title>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'>
+
+  <link rel="stylesheet" href="/css/calendario.css">
+  <link rel="stylesheet" href="/css/navtop.css">
+  <link rel="stylesheet" href="/css/navleft.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/lembretes.css">
+
+  <script src="https://kit.fontawesome.com/74adac6a14.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <nav class="cabecalho">
+      <button class="responsivo" id="responsive"><img class="imgresponsivo" src="/assets/responsivo.svg"
+          alt="Bars"></button>
+
+      <img class="logo" src="/assets/user.svg" alt="Foto do Usuário">
+    </nav>
+  </header>
+
+  <!--Barra de Navegação Lateral-->
+  <nav class="background lateral" id="background">
+    <!--Lista para fazer os "Botões" de navegação-->
+    <ul class="lat">
+      <!--Item da lista-->
+      <li class="navs select">
+        <!--Link para Ancoragem-->
+        <a class="later" href="#">
+          <!--Icone do Font Awensome (Casa)-->
+          <i class="left fa-solid fa-house-chimney"></i>
+          <!--Nome abaixo do icone-->
+          <p class="footer">Home</p>
+        </a>
+      </li>
+      <!--Item da lista-->
+      <li class="navs">
+        <!--Link para Ancoragem-->
+        <a class="later" href="#">
+          <!--Icone do Font Awensome (Check-List)-->
+          <i class="left fa-solid fa-list-check"></i>
+          <!--Nome abaixo do icone-->
+          <p class="footer">Lembrete</p>
+        </a>
+      </li>
+      <!--Item da lista-->
+      <li class="navs">
+        <!--Link para Ancoragem-->
+        <a class="later" href="#">
+          <!--Icone do Font Awensome ("Botão" de +)-->
+          <i class="left fa-solid fa-circle-plus"></i>
+          <!--Nome abaixo do icone-->
+          <p class="footer">Criar Lembrete</p>
+        </a>
+      </li>
+      <!--Item da lista-->
+      <li class="navs">
+        <!--Link para Ancoragem-->
+        <a class="later" href="#">
+          <!--Icone do Font Awensome (Livro)-->
+          <i class="left fa-solid fa-book"></i>
+          <!--Nome abaixo do icone-->
+          <p class="footer">Sobre</p>
+        </a>
+      </li>
+    </ul>
+    <!--Barra que flutua na direita-->
+    <div class="barrinha"></div>
+  </nav>
+
+  <!--Calendario-->
+  <div class="main-wrapper" style="display: none;">
+    <h0 id="eventDayName"></h0>
+  </div>
+  <!--Calendario-->
+  <div class="content-wrapper lighten-3">
+    <div class="container">
+
+      <div class="calendar-wrapper z-depth-2">
+
+        <div class="header-background">
+          <div class="calendar-header">
+
+            <a class="prev-button" id="prev">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </a>
+            <a class="next-button" id="next">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </a>
+
+            <div class="row header-title">
+
+              <div class="header-text">
+                <h3 id="month-name" style="text-transform: uppercase;">Janeiro</h3>
+                <h5 id="todayDayName">Hoje é Sexata 7 Jan</h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-content">
+          <div id="calendar-table" class="calendar-cells">
+
+            <div id="table-header">
+              <div class="row">
+                <div class="col">Seg</div>
+                <div class="col">Ter</div>
+                <div class="col">Qua</div>
+                <div class="col">Qui</div>
+                <div class="col">Sex</div>
+                <div class="col">Sáb</div>
+                <div class="col">Dom</div>
+              </div>
+            </div>
+
+            <div id="table-body" class="">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bloquinhos">
+    <div class="lembretes"></div>
+
+    <div class="dicas">
+      <div class="bdicas">
+        <h2><i class="fa-solid fa-lightbulb"></i> Dicas</h2>
+        <p class="dicasFooter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ipsam eveniet sit corrupti non eligendi itaque, eaque praesentium eum dolorem</p>
+      </div>
+      <div class="bdicas">
+        <h2><i class="fa-solid fa-lightbulb"></i> Dicas</h2>
+        <p class="dicasFooter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ipsam eveniet sit corrupti non eligendi itaque, eaque praesentium eum dolorem</p>
+      </div>
+      <div class="bdicas">
+        <h2><i class="fa-solid fa-lightbulb"></i> Dicas</h2>
+        <p class="dicasFooter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ipsam eveniet sit corrupti non eligendi itaque, eaque praesentium eum dolorem</p>
+      </div>
+    </div>
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/navlateral.js"></script>
+</body>
+
+</html>
